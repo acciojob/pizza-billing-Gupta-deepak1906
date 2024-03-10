@@ -59,22 +59,22 @@ public class Pizza {
         // your code goes here
         StringBuilder sb= new StringBuilder();
         if(isVeg){
-            sb.append("Base price of the Pizza:").append(300).append("\n");
+            sb.append("Base Price Of The Pizza: 300").append(300).append("\n");
         }else {
-            sb.append("base price of the Prizza: ").append(400).append("\n");
+            sb.append("Base Price Of The Pizza: 400").append(400).append("\n");
         }
 
         if(isAddExtraCheese){
-            sb.append("Extra Cheese added: 80\n");
+            sb.append("Extra Cheese Added: 80\n");
         }
 
         if(isVeg && isAddExtraTopping){
-            sb.append("Extra Toppings added: 70\n");
+            sb.append("Extra Toppings Added: 70\n");
         }else if(!isVeg && isAddExtraTopping){
-            sb.append("Extra toppings added: 120\n");
+            sb.append("Extra Toppings Added: 120\n");
         }
         if(isTakeaway){
-            sb.append("paper bag Added: 20\n");
+            sb.append("Paperbag Added: 20\n");
         }
         sb.append("Total Price: ").append(price).append("\n");
 
