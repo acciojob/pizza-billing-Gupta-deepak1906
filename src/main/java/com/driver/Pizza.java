@@ -78,7 +78,7 @@ public class Pizza {
         }
         sb.append("Total Price: ").append(price).append("\n");
 
-        //return this.bill;
-        return sb.toString();
+        return this.bill;
+       // return sb.toString();
     }
 }
