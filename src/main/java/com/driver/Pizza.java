@@ -29,8 +29,12 @@ public class Pizza {
         // your code goes here
         if(!isAddExtraCheese){
             price+=80;
-            isAddExtraCheese=true;
         }
+        else if{
+            System.out.println("Extra cheese already added");
+        }
+        isAddExtraCheese=true;
+
     }
 
     public void addExtraToppings(){
@@ -53,6 +57,7 @@ public class Pizza {
 
     public String getBill(){
         // your code goes here
+
         return this.bill;
     }
 }
