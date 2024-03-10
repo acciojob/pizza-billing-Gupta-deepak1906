@@ -57,7 +57,28 @@ public class Pizza {
 
     public String getBill(){
         // your code goes here
+        StringBuilder sb new StringBuilder();
+        if(isVeg){
+            sb.append("Base price of the Pizza:").append(300).append("\n");
+        }else {
+            sb.append("base price of the Prizza: ").append(400).append("\n");
+        }
 
-        return this.bill;
+        if(isAddExtraCheese){
+            sb.append("Extra Cheese added: 80\n");
+        }
+
+        if(isVeg && isAddExtraTopping){
+            sb.append("Extra Toppings added: 70\n");
+        }else if(!isVeg && isAddExtraTopping){
+            sb.append("Extra toppings added: 120\n");
+        }
+        if(isTakeaway){
+            sb.append("paper bag Added: 20\n");
+        }
+        sb.append("Total Price: ").append(price).append("\n");
+
+        //return this.bill;
+        return sb.toString();
     }
 }
