@@ -30,9 +30,9 @@ public class Pizza {
         if(!isAddExtraCheese){
             price+=80;
         }
-        else {
-            System.out.println("Extra cheese already added");
-        }
+        //else {
+          //  System.out.println("Extra cheese already added");
+        //}
         isAddExtraCheese=true;
 
     }
@@ -59,9 +59,9 @@ public class Pizza {
         // your code goes here
         StringBuilder sb= new StringBuilder();
         if(isVeg){
-            sb.append("Base Price Of The Pizza: 300").append(300).append("\n");
+            sb.append("Base Price Of The Pizza: ").append(300).append("\n");
         }else {
-            sb.append("Base Price Of The Pizza: 400").append(400).append("\n");
+            sb.append("Base Price Of The Pizza: ").append(400).append("\n");
         }
 
         if(isAddExtraCheese){
